@@ -26,5 +26,10 @@ class test_calculation(unittest.TestCase):
     def test_exception(self):
         self.assertRaises(ValueError, calculation.division, 5,0)
 
+    def test_even(self):
+        self.assertTrue(calculation.even(4))
+        self.assertFalse(calculation.even(5))
+
+
 if __name__=='__main__':
     unittest.main()
